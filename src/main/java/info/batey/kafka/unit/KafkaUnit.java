@@ -97,7 +97,7 @@ public class KafkaUnit {
         arguments[3] = "--replication-factor";
         arguments[4] = "1";
         arguments[5] = "--partitions";
-        arguments[6] = "" + Integer.valueOf(numPartitions);
+        arguments[6] = String.valueOf(numPartitions);
         arguments[7] = "--topic";
         arguments[8] = topicName;
         LOGGER.info("Executing: CreateTopic " + Arrays.toString(arguments));
